@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+body {
+  background-image: url("/img/back.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #262626;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar__item {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.navbar__item::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+.navbar__item:hover::before {
+  width: 100%;
+}
+
+.img-game {
+  height: 200px;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.game {
+  position: relative;
+  background-color: rgb(125, 65, 65);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.game__info {
+  padding-left: 20px;
+}
+
+.game__info-text {
+  font-size: 1.5em;
+}
+
+.box-mark {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #00ce7a;
+  border-radius: 10%;
+  margin-right: 20px;
+}
+
+.circle-mark {
+  margin-top: 10px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ce7a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-metacritic {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-stopgame {
+  width: 50px;
+  height: 50px;
+}
+
+.stopgame-mark {
+  width: 50px;
+  height: 50px;
+}
+
+.fa-user {
+  margin-left: 7.5px;
+  font-size: 40px;
+}
+
+.fa-users {
+  margin-top: 12px;
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.input-section {
+  background-color: rgb(125, 65, 65);
+}
+
+.add-to-collection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 2px;
+  height: 17px;
+  width: 19px;
+  margin: 0px;
+  bottom: 190px;
+  left: 390px;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  padding-left: 98%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-collection {
+  position: relative;
+  height: 285px;
+  background-color: rgb(125, 65, 65);
+  border-radius: 10px;
+}
+.add-collection__text {
+  position: relative;
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  top: 120px;
+  left: 200px;
+}
+
+.select-collection {
+  background-color: rgb(125, 65, 65);
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.select-collection:hover {
+  background-color: rgb(250, 37, 37);
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.collection__input-hidden {
+  display: none;
+}
+
+.game__input-hidden {
+  display: none;
+}
+
+.game-collection {
+  position: relative;
+  background-color: rgb(125, 65, 65);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.game-collection__info {
+  padding-left: 20px;
+}
+
+.game-collection__info-text {
+  font-size: 1.5em;
+}
+
+.public-collection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  padding-top: 2px;
+  padding-left: 1px;
+  bottom: 190px;
+  left: 600px;
+}
+
+/*# sourceMappingURL=style.css.map */
